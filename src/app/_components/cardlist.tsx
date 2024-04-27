@@ -62,6 +62,7 @@ const CardList = () => {
                                 imageUrl={
                                     `https://pvknashlqegmindzlzvm.supabase.co/storage/v1/object/public/food-images/${food.id}.webp`
                                 }
+                                clickable={true}
                             />
                         </li>
                     ))
