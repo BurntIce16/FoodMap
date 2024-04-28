@@ -43,7 +43,6 @@ const CardList = () => {
 
     return (
         <div>
-            <p>Trending:</p>
             <ul style={{ listStyleType: "none", padding: 0 }}>
                 {loading ? (
                     // Display loading cards if data is still loading

@@ -17,3 +17,5 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the app
+
+Make sure you enable devtools, enable device toolbar, use a popular phone (preferably iPhone SE) and undock the inspector into a seperate window (optional) for the best experience.

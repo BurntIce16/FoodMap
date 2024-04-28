@@ -1,4 +1,5 @@
-import SearchBar from '../_components/searchbar';
+import SearchBar from '@/app/_components/searchbar';
+import BackButton from '@/app/_components/back-button';
 
 const SearchPage: React.FC = () => {
     return (

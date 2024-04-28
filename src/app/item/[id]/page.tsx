@@ -139,11 +139,12 @@ export default function Page({ params }: { params: { id: number } }) {
 
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-center pr-12 pl-12 pt-4">
-			<div className="flex flex-row justify-between w-full">
+			<div className="flex flex-row items-center justify-between w-full">
 				<BackButton />
 				<h1 className="text-4xl font-bold text-center line-clamp-1">Food Info</h1>
 				{food && food.id && <SaveButton id={food.id} />}
 			</div>
+
 
 			<div className="w-full flex flex-col items-center gap-4">
 				{food ? (

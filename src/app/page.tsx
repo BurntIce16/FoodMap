@@ -32,8 +32,11 @@ export default function Home() {
 						</div>
 					</Link>
 				</div>
+
 				{/* Search Bar */}
 				<SearchBar />
+
+				<div className="w-full h-4"></div>
 
 				<div className="flex items-center justify-center">
 					<CardList />

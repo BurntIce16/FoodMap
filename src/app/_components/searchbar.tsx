@@ -3,9 +3,11 @@
 import React, { useState } from "react";
 import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const SearchBar: React.FC = () => {
     const [inputValue, setInputValue] = useState("");
+    const router = useRouter(); // Instantiate the useRouter hook
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setInputValue(event.target.value);
@@ -15,8 +17,8 @@ const SearchBar: React.FC = () => {
         if (inputValue.trim()) {
             // Here, handle the search logic or redirect, etc.
             console.log("Input submitted:", inputValue);
-            // Redirect or fetch data based on inputValue, for example:
-            // router.push(`/search?query=${inputValue}`);
+            // Redirect to search/<inputValue>
+            router.push(`/search/${encodeURIComponent(inputValue.trim())}`);
         }
     };
 
