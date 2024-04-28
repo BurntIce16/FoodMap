@@ -8,6 +8,7 @@ import FoodCard from "./card";
 type FoodItem = {
     id: number;
     name: string;
+    score: number;
     // add other properties as needed
 };
 
@@ -63,6 +64,7 @@ const CardList = () => {
                                     `https://pvknashlqegmindzlzvm.supabase.co/storage/v1/object/public/food-images/${food.id}.webp`
                                 }
                                 clickable={true}
+                                score={food.score}
                             />
                         </li>
                     ))

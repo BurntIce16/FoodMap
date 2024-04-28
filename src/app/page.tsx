@@ -9,7 +9,7 @@ const pictureSize = "40px";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
+		<main className="flex min-h-screen flex-col items-center justify-between pr-24 pl-24 pt-4">
 			<div className="w-full">
 				<div className="flex items-center justify-center mb-4">
 					<Link href="/notifications">
