@@ -9,7 +9,7 @@ const BackButton: React.FC = () => {
 
     return (
         <button onClick={() => router.back()} className="flex items-center justify-center p-2 rounded-full hover:bg-gray-200">
-            <WestRoundedIcon />
+            <WestRoundedIcon fontSize="large"/>
         </button>
     );
 };
