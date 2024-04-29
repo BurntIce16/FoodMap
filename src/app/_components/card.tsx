@@ -38,7 +38,6 @@ const FoodCard: React.FC<FoodCardProps> = ({
 	clickable,
 	flagged,
 	score,
-	uploader,
 }) => {
 	if (loading) {
 		return <SkeletonLoader />;
